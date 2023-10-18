@@ -34,6 +34,11 @@ h1 {
 h2 {
   font-size: 96px;
   color: var(--third-color);
+  text-align: center;
+}
+
+h3 {
+  color: var(--default-color);
 }
 
 p {
@@ -42,6 +47,10 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .hero {
@@ -64,17 +73,17 @@ p {
   font-size: 24px;
 }
 
-.about-section {
+.content-container {
   padding: 160px 20px;
 }
 
-.about-section h1 {
+.content-container h1 {
   font-size: 64px;
   line-height: 80px;
   color: var(--third-color);
 }
 
-.about-section-content {
+.content {
   margin: 30px;
 }
 
@@ -104,6 +113,43 @@ p {
   height: 700px;
 }
 
+.weather {
+  height: 600px;
+}
+
+.anime {
+  height: 600px;
+}
+
+.basics,
+.plus {
+  height: 400px;
+}
+
+.certificates {
+  text-align: center;
+  font-family: var(--default-font);
+  font-size: 30px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.recent-projects {
+  text-align: center;
+  font-family: var(--default-font);
+  font-size: 30px;
+  max-width: 80%;
+  margin: 0 auto;
+  height: 350px;
+}
+
+.project-tech-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-left: -40px;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 56px;
@@ -114,11 +160,15 @@ p {
     font-size: 44px;
   }
 
+  h3 {
+    margin-top: 10px;
+  }
+
   .hero {
     padding: 80px 20px;
   }
 
-  .about-section {
+  .content-container {
     text-align: center;
     padding: 0;
   }
@@ -126,9 +176,6 @@ p {
   .project-description {
     padding: 0;
     text-align: center;
-  }
-
-  .about-section {
   }
 }
 
