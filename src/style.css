@@ -54,7 +54,15 @@ ul {
 }
 
 .hero {
-  background: var(--secondary-color);
+  background: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
   text-align: center;
   padding: 160px 20px;
 }
@@ -107,6 +115,14 @@ ul {
 
 .project-description {
   padding: 120px 60px;
+}
+
+.active {
+  color: var(--branding-color) !important;
+}
+
+.nav-item {
+  padding: 0 10px;
 }
 
 .img-fluid {
