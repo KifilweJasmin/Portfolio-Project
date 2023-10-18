@@ -1,12 +1,18 @@
 :root {
+  --background-color: #0a192e;
+  --default-color: #8892b0;
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
+  --tertiary-color: #a8b2d1;
+  --third-color: #ccd7f5;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--Default-font-family);
+  background-color: var(--background-color);
+  color: var(--default-color);
 }
 
 h1,
@@ -27,10 +33,12 @@ h1 {
 
 h2 {
   font-size: 96px;
+  color: var(--third-color);
 }
 
 p {
   font-family: var(--default-font-family);
+  color: var(--tertiary-color);
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
@@ -56,6 +64,20 @@ p {
   font-size: 24px;
 }
 
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+  color: var(--third-color);
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
@@ -78,9 +100,13 @@ p {
   padding: 120px 60px;
 }
 
+.img-fluid {
+  height: 700px;
+}
+
 @media (max-width: 900px) {
   h1 {
-    font-size: 46px;
+    font-size: 56px;
     line-height: 1.5;
   }
 
@@ -92,10 +118,23 @@ p {
     padding: 80px 20px;
   }
 
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+
   .project-description {
     padding: 0;
     text-align: center;
   }
+
+  .about-section {
+  }
+}
+
+.fa-brands {
+  font-weight: 400;
+  font-family: "Font Awesome 6 Brands";
 }
 
 #typewriter {
