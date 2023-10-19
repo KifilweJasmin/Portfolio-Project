@@ -41,6 +41,10 @@ h3 {
   color: var(--default-color);
 }
 
+h4 {
+  font-size: 48px;
+}
+
 p {
   font-family: var(--default-font-family);
   color: var(--tertiary-color);
@@ -166,6 +170,51 @@ ul {
   margin-left: -40px;
 }
 
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: #64ffda;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  background: var(--third-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: #64ffda;
+  background: blue;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 56px;
@@ -178,6 +227,10 @@ ul {
 
   h3 {
     margin-top: 10px;
+  }
+
+  h4 {
+    font-size: 26px;
   }
 
   .hero {
